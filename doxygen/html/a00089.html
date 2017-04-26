@@ -177,7 +177,7 @@ Macros</h2></td></tr>
 <p>Since both embedded ADC hardware cells are configured to operate at full 12-Bit resolution, the ADC result register values are ranged between 0...0x0fff.</p>
 <dl class="section note"><dt>Note</dt><dd>Remember to consider the analog front-end biasing behavior. The peak-voltage resolution of a full scaled sinusoidal input signal reaches only half the ADC-resolution since output values of the angular position decoder can be positive or negative. In other words: The angular displacement of the rotor can achieve in clockwise and counterclockwise direction. </dd></dl>
 
-<p>Definition at line <a class="el" href="a00018_source.html#l00174">174</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
+<p>Definition at line <a class="el" href="a00018_source.html#l00178">178</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -196,7 +196,7 @@ Macros</h2></td></tr>
 <p>Remote set-point amplitude division factor. </p>
 <p>To mitigate the processing load for remotely (Qt console interface) performed set-point updates, they were transferred as binary coded short integers (16-Bit). The AMPL_FLOAT_DIVISOR is used to scale the binary set-point data. In other words, this parameter determines the resolution as well as the absolute reading of the set-point amplitude values. </p>
 
-<p>Definition at line <a class="el" href="a00018_source.html#l00257">257</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
+<p>Definition at line <a class="el" href="a00018_source.html#l00261">261</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -216,7 +216,7 @@ Macros</h2></td></tr>
 <p>Rounded representation of the analog offset or bias voltage as integral data type.</p>
 <dl class="section note"><dt>Note</dt><dd>This evaluates to \((4095+1)/2 = 2048\) which could physically be expressed as \(VLSB*AN_BIAS_INT = 1.2503V$ @a pprox VA_BIAS\) </dd></dl>
 
-<p>Definition at line <a class="el" href="a00018_source.html#l00223">223</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
+<p>Definition at line <a class="el" href="a00018_source.html#l00227">227</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -236,7 +236,7 @@ Macros</h2></td></tr>
 <p>Both embedded analog units of the STM32F4xx can be configured to use different reference signal sources such as an external voltage signal or the internal bandgap circuits.</p>
 <dl class="section note"><dt>Note</dt><dd>If both AD- and DA- converter configured for the external reference source, they has to operate on a common analog reference signal. </dd></dl>
 
-<p>Definition at line <a class="el" href="a00018_source.html#l00187">187</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
+<p>Definition at line <a class="el" href="a00018_source.html#l00191">191</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -256,7 +256,7 @@ Macros</h2></td></tr>
 <p>Lower limit of digital-to-analog converter output signal, represented as integral data type.</p>
 <dl class="section note"><dt>Note</dt><dd>This evaluates to \((4095-1)/2 = 2046\) which could physically be expressed as \(VLSB*LOWER_DAC_LIMIT_SIGNED = 1.2503V\). </dd></dl>
 
-<p>Definition at line <a class="el" href="a00018_source.html#l00245">245</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
+<p>Definition at line <a class="el" href="a00018_source.html#l00249">249</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -276,7 +276,7 @@ Macros</h2></td></tr>
 <p>Upper limit of digital-to-analog converter output signal, represented as integral data type.</p>
 <dl class="section note"><dt>Note</dt><dd>This evaluates to \((4095-1)/2 = 2046\) which could physically be expressed as \(VLSB*UPPER_DAC_LIMIT_SIGNED = 1.24908V\). </dd></dl>
 
-<p>Definition at line <a class="el" href="a00018_source.html#l00234">234</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
+<p>Definition at line <a class="el" href="a00018_source.html#l00238">238</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -295,7 +295,7 @@ Macros</h2></td></tr>
 <p>Bias level definition for the analog front-end. [V]. </p>
 <dl class="section note"><dt>Note</dt><dd>See <a class="el" href="a00089.html#ga0a11289b824817265f02b83ec5abea78">ADC_RNG</a>, </dd></dl>
 
-<p>Definition at line <a class="el" href="a00018_source.html#l00194">194</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
+<p>Definition at line <a class="el" href="a00018_source.html#l00198">198</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -317,7 +317,7 @@ Macros</h2></td></tr>
 <dd>
 This evaluates to \(2.5V/(2^12-1) = 610.5uV/dig\). </dd></dl>
 
-<p>Definition at line <a class="el" href="a00018_source.html#l00212">212</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
+<p>Definition at line <a class="el" href="a00018_source.html#l00216">216</a> of file <a class="el" href="a00018_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -326,7 +326,7 @@ This evaluates to \(2.5V/(2^12-1) = 610.5uV/dig\). </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 14 2017 13:29:48 for XY-GalvoScanner by
+    <li class="footer">Generated on Tue Mar 14 2017 19:31:41 for XY-GalvoScanner by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

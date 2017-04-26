@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>XY-GalvoScanner: md_stm32f4_dac.h File Reference</title>
+<title>XY-GalvoScanner: md_stm32f4_dac_waveform.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -113,75 +113,92 @@ $(document).ready(function(){initNavTree('a00027.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">md_stm32f4_dac.h File Reference</div>  </div>
+<div class="title">md_stm32f4_dac_waveform.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Project XA-Galvo scanner specific digital to analog converter methods.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;stm32f4xx.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00035_source.html">md_stm32f4_gpio.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="a00028_source.html">md_stm32f4_dac_waveform.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for md_stm32f4_dac.h:</div>
+Include dependency graph for md_stm32f4_dac_waveform.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00195.svg" width="199" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="a00196.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00186.svg" width="411" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="a00027_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:gabf30804989c919701624ae6fe94ce7de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html#gabf30804989c919701624ae6fe94ce7de">MD_DAC_Channel_t</a> { <a class="el" href="a00081.html#ggabf30804989c919701624ae6fe94ce7deabe67851a33fcec07fa268754b208725f">MD_DAC1</a>, 
-<a class="el" href="a00081.html#ggabf30804989c919701624ae6fe94ce7dea3bd8fa7ba5803a0d80eeed480450dc95">MD_DAC2</a>
- }<tr class="memdesc:gabf30804989c919701624ae6fe94ce7de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select which DAC channel.  <a href="a00081.html#gabf30804989c919701624ae6fe94ce7de">More...</a><br /></td></tr>
-</td></tr>
-<tr class="separator:gabf30804989c919701624ae6fe94ce7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gabb02137ecc24355b4c9d3da38b59a44d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00082.html#gabb02137ecc24355b4c9d3da38b59a44d">MD_DAC_Init</a> (<a class="el" href="a00081.html#gabf30804989c919701624ae6fe94ce7de">MD_DAC_Channel_t</a> DACx)</td></tr>
-<tr class="memdesc:gabb02137ecc24355b4c9d3da38b59a44d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes DAC channel and it's pin.  <a href="a00082.html#gabb02137ecc24355b4c9d3da38b59a44d">More...</a><br /></td></tr>
-<tr class="separator:gabb02137ecc24355b4c9d3da38b59a44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga619bd25bcb153bed7510e0da9fd559b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00082.html#ga619bd25bcb153bed7510e0da9fd559b5">MD_DAC_SetValue</a> (<a class="el" href="a00081.html#gabf30804989c919701624ae6fe94ce7de">MD_DAC_Channel_t</a> DACx, uint16_t value)</td></tr>
-<tr class="memdesc:ga619bd25bcb153bed7510e0da9fd559b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets analog value to ADCx.  <a href="a00082.html#ga619bd25bcb153bed7510e0da9fd559b5">More...</a><br /></td></tr>
-<tr class="separator:ga619bd25bcb153bed7510e0da9fd559b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae79211bd04616fa90b2fa88a0220a436"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae79211bd04616fa90b2fa88a0220a436"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DAC_CHx_DMA_SineWaveConfig</b> (<a class="el" href="a00070.html#gabf30804989c919701624ae6fe94ce7de">MD_DAC_Channel_t</a> DACx, FunctionalState NewStateDAC, FunctionalState NewStateDMA)</td></tr>
+<tr class="separator:ae79211bd04616fa90b2fa88a0220a436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf46f7f55713090d0d01917f8b4cf12d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#gaf46f7f55713090d0d01917f8b4cf12d4">DAC_CHx_EscalatorConfig</a> (<a class="el" href="a00070.html#gabf30804989c919701624ae6fe94ce7de">MD_DAC_Channel_t</a> DACx)</td></tr>
+<tr class="memdesc:gaf46f7f55713090d0d01917f8b4cf12d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">DAC Channel Escalator Configuration.  <a href="a00076.html#gaf46f7f55713090d0d01917f8b4cf12d4">More...</a><br /></td></tr>
+<tr class="separator:gaf46f7f55713090d0d01917f8b4cf12d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad004be7d658bf5458a856035602dd61d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ad004be7d658bf5458a856035602dd61d">DAC_Chx_TriangleConfig</a> (<a class="el" href="a00070.html#gabf30804989c919701624ae6fe94ce7de">MD_DAC_Channel_t</a> DACx)</td></tr>
+<tr class="memdesc:ad004be7d658bf5458a856035602dd61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">DAC Channel triangle configuration.  <a href="#ad004be7d658bf5458a856035602dd61d">More...</a><br /></td></tr>
+<tr class="separator:ad004be7d658bf5458a856035602dd61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2664b9023b9f3770619ec6a03c2214b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ga2664b9023b9f3770619ec6a03c2214b2">DAC_Chx_NoiseConfig</a> (<a class="el" href="a00070.html#gabf30804989c919701624ae6fe94ce7de">MD_DAC_Channel_t</a> DACx)</td></tr>
+<tr class="memdesc:ga2664b9023b9f3770619ec6a03c2214b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">DAC Channel1 Noise Configuration.  <a href="a00076.html#ga2664b9023b9f3770619ec6a03c2214b2">More...</a><br /></td></tr>
+<tr class="separator:ga2664b9023b9f3770619ec6a03c2214b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Project XA-Galvo scanner specific digital to analog converter methods. </p>
-<dl class="section date"><dt>Date</dt><dd>28 Jan 2017 </dd></dl>
+<div class="textblock"><dl class="section date"><dt>Date</dt><dd>14 Mar 2017 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Manuel Del Basso (mainster) <br />
  E-Mail: <a href="#" onclick="location.href='mai'+'lto:'+'man'+'ue'+'l.d'+'el'+'bas'+'so'+'@gm'+'ai'+'l.c'+'om'; return false;">manue<span style="display: none;">.nosp@m.</span>l.de<span style="display: none;">.nosp@m.</span>lbass<span style="display: none;">.nosp@m.</span>o@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a></dd></dl>
 <p><b>IDE:</b> System Workbench ac6 (eclipse stm32) </p><dl class="section user"><dt>StdPeriph: STM32F4xx Standard peripheral drivers version 1.4.0 or greater required</dt><dd></dd></dl>
 <dl class="section user"><dt>License: GNU GPL v3</dt><dd></dd></dl>
-<pre class="fragment">   Copyright (C) 2016   Manuel Del Basso
+<pre class="fragment">--------------------------------------------------------------
 
-   This program is free software: you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation, either version 3 of the License, or
-   (at your option) any later version.
+ Copyright (C) 2016  Manuel Del Basso
 
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-   You should have received a copy of the GNU General Public License
-   along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</pre> 
-<p>Definition in file <a class="el" href="a00027_source.html">md_stm32f4_dac.h</a>.</p>
-</div></div><!-- contents -->
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</pre><hr/>
+
+<p>Definition in file <a class="el" href="a00027_source.html">md_stm32f4_dac_waveform.c</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ad004be7d658bf5458a856035602dd61d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DAC_Chx_TriangleConfig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00070.html#gabf30804989c919701624ae6fe94ce7de">MD_DAC_Channel_t</a>&#160;</td>
+          <td class="paramname"><em>DACx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DAC Channel triangle configuration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">DACx</td><td>The DAC channel to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="a00027_source.html#l00150">150</a> of file <a class="el" href="a00027_source.html">md_stm32f4_dac_waveform.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f35b6d06d9a189103de193c5301bf232.html">00-STM32F4_LIBRARY_MDB</a></li><li class="navelem"><a class="el" href="a00027.html">md_stm32f4_dac.h</a></li>
-    <li class="footer">Generated on Fri Feb 10 2017 20:16:23 for XY-GalvoScanner by
+    <li class="navelem"><a class="el" href="dir_f35b6d06d9a189103de193c5301bf232.html">00-STM32F4_LIBRARY_MDB</a></li><li class="navelem"><a class="el" href="a00027.html">md_stm32f4_dac_waveform.c</a></li>
+    <li class="footer">Generated on Tue Mar 14 2017 19:31:41 for XY-GalvoScanner by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

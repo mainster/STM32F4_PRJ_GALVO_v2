@@ -13,7 +13,7 @@
 <area shape="rect" id="node23" href="$a00045.html" title="PID compensator implementation. " alt="" coords="1417,155,1468,181"/>
 <area shape="rect" id="node25" href="$a00017.html" title="TODO. " alt="" coords="1543,80,1622,107"/>
 <area shape="rect" id="node27" href="$a00019.html" title="helper.c" alt="" coords="1646,80,1714,107"/>
-<area shape="rect" id="node3" href="$a00027_source.html" title="md_stm32f4_dac_waveform.c" alt="" coords="5,155,203,181"/>
+<area shape="rect" id="node3" href="$a00027.html" title="md_stm32f4_dac_waveform.c" alt="" coords="5,155,203,181"/>
 <area shape="rect" id="node5" href="$a00029.html" title="md_stm32f4_delay.c" alt="" coords="935,155,1078,181"/>
 <area shape="rect" id="node10" href="$a00021.html" title="Callback handler implementations. " alt="" coords="1125,528,1235,555"/>
 <area shape="rect" id="node13" href="$a00023.html" title="Main source implementation (29&#45;04&#45;2015) " alt="" coords="936,304,997,331"/>

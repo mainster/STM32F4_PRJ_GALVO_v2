@@ -2,6 +2,7 @@ var searchData=
 [
   ['dac_5fchx_5fescalatorconfig',['DAC_CHx_EscalatorConfig',['../a00076.html#gaf46f7f55713090d0d01917f8b4cf12d4',1,'DAC_CHx_EscalatorConfig(MD_DAC_Channel_t DACx):&#160;md_stm32f4_dac_waveform.c'],['../a00076.html#gaf46f7f55713090d0d01917f8b4cf12d4',1,'DAC_CHx_EscalatorConfig(MD_DAC_Channel_t DACx):&#160;md_stm32f4_dac_waveform.c']]],
   ['dac_5fchx_5fnoiseconfig',['DAC_Chx_NoiseConfig',['../a00076.html#ga2664b9023b9f3770619ec6a03c2214b2',1,'DAC_Chx_NoiseConfig(MD_DAC_Channel_t DACx):&#160;md_stm32f4_dac_waveform.c'],['../a00076.html#ga2664b9023b9f3770619ec6a03c2214b2',1,'DAC_Chx_NoiseConfig(MD_DAC_Channel_t DACx):&#160;md_stm32f4_dac_waveform.c']]],
+  ['dac_5fchx_5ftriangleconfig',['DAC_Chx_TriangleConfig',['../a00027.html#ad004be7d658bf5458a856035602dd61d',1,'md_stm32f4_dac_waveform.c']]],
   ['dac_5fdma_5fsinewaveconfig',['DAC_DMA_SineWaveConfig',['../a00076.html#ga018e86e244319b1cb74f7c72b7d5d6c2',1,'md_stm32f4_dac_waveform.h']]],
   ['dac_5fsetdualchansigned',['DAC_SetDualChanSigned',['../a00092.html#gab6494f34679dc4d0a8c08ec624a4bcf8',1,'adc_dac_dma.c']]],
   ['dac_5fsetdualchansigned_5ftripped',['DAC_SetDualChanSigned_Tripped',['../a00092.html#gaee2322aa05f1f3ad93c480e4ef565ad6',1,'adc_dac_dma.c']]],

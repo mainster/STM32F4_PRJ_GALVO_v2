@@ -1,9 +1,7 @@
 var a00027 =
 [
-    [ "MD_DAC_Channel_t", "a00081.html#gabf30804989c919701624ae6fe94ce7de", [
-      [ "MD_DAC1", "a00081.html#ggabf30804989c919701624ae6fe94ce7deabe67851a33fcec07fa268754b208725f", null ],
-      [ "MD_DAC2", "a00081.html#ggabf30804989c919701624ae6fe94ce7dea3bd8fa7ba5803a0d80eeed480450dc95", null ]
-    ] ],
-    [ "MD_DAC_Init", "a00082.html#gabb02137ecc24355b4c9d3da38b59a44d", null ],
-    [ "MD_DAC_SetValue", "a00082.html#ga619bd25bcb153bed7510e0da9fd559b5", null ]
+    [ "DAC_CHx_DMA_SineWaveConfig", "a00027.html#ae79211bd04616fa90b2fa88a0220a436", null ],
+    [ "DAC_CHx_EscalatorConfig", "a00076.html#gaf46f7f55713090d0d01917f8b4cf12d4", null ],
+    [ "DAC_Chx_NoiseConfig", "a00076.html#ga2664b9023b9f3770619ec6a03c2214b2", null ],
+    [ "DAC_Chx_TriangleConfig", "a00027.html#ad004be7d658bf5458a856035602dd61d", null ]
 ];

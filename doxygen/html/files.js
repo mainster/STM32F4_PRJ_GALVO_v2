@@ -17,7 +17,7 @@ var files =
     [ "main.h", "a00024.html", "a00024" ],
     [ "md_stm32f4_dac.c", "a00025.html", "a00025" ],
     [ "md_stm32f4_dac.h", "a00026.html", "a00026" ],
-    [ "md_stm32f4_dac_waveform.c", "a00027_source.html", null ],
+    [ "md_stm32f4_dac_waveform.c", "a00027.html", "a00027" ],
     [ "md_stm32f4_dac_waveform.h", "a00028.html", "a00028" ],
     [ "md_stm32f4_delay.c", "a00029.html", "a00029" ],
     [ "md_stm32f4_delay.h", "a00030.html", "a00030" ],

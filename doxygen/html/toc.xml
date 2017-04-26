@@ -1076,7 +1076,12 @@
         <topic label="MD_DAC_Init" href="a00071.html#gabb02137ecc24355b4c9d3da38b59a44d"/>
         <topic label="MD_DAC_SetValue" href="a00071.html#ga619bd25bcb153bed7510e0da9fd559b5"/>
       </topic>
-      <topic label="md_stm32f4_dac_waveform.c" href="a00027_source.html"/>
+      <topic label="md_stm32f4_dac_waveform.c" href="a00027.html">
+        <topic label="DAC_CHx_DMA_SineWaveConfig" href="a00027.html#ae79211bd04616fa90b2fa88a0220a436"/>
+        <topic label="DAC_CHx_EscalatorConfig" href="a00076.html#gaf46f7f55713090d0d01917f8b4cf12d4"/>
+        <topic label="DAC_Chx_NoiseConfig" href="a00076.html#ga2664b9023b9f3770619ec6a03c2214b2"/>
+        <topic label="DAC_Chx_TriangleConfig" href="a00027.html#ad004be7d658bf5458a856035602dd61d"/>
+      </topic>
       <topic label="md_stm32f4_dac_waveform.h" href="a00028.html">
         <topic label="DAC_DHR12R1_ADDRESS" href="a00074.html#gacbf063c53f62f5fc24ccdf6d99b9b61a"/>
         <topic label="DAC_DHR12R2_ADDRESS" href="a00074.html#ga84bfc33520316f1fe9ab25de63573086"/>
